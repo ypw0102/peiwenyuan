@@ -132,22 +132,101 @@
     <hr>
 
     <h2><a id="published-papers-updated" class="anchor" href="#publications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Published &amp; Forthcoming Papers</h2>
-        <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://arxiv.org/abs/2401.00437v1">BatchEval: Towards Human-like Text Evaluation</a> <br> Peiwen Yuan, Shaoxiong Feng, Yiwei Li, Xinglin Wang, Boyuan Pan, Heda Wang, Kan Li <br> <b>Submitted to <i>ACL2024</i></b> <br><button class="accordion"> 
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://arxiv.org/abs/2401.10480">Escape Sky-high Cost: Early-stopping Self-Consistency for Multi-step Reasoning</a> <br> Yiwei Li*, Peiwen Yuan*, Shaoxiong Feng, Boyuan Pan, Xinglin Wang, Bin Sun, Heda Wang, Kan Li <br> <b> <i>ICLR2024</i> poster</b> <br><button class="accordion"> 
     Abstract   
     </button>   
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> Significant progress has been made in automatic text evaluation with the introduction of large language models (LLMs) as evaluators. However, current sample-wise evaluation paradigm suffers from the following issues: (1) Sensitive to prompt design; (2) Poor resistance to noise; (3) Inferior ensemble performance with static reference. Inspired by the fact that humans treat both criterion definition and inter sample comparison as references for evaluation, we propose BatchEval, a paradigm that conducts batch-wise evaluation iteratively to alleviate the above problems. We explore variants under this paradigm and confirm the optimal settings are two stage procedure with heterogeneous batch composition strategy and decimal scoring format. Comprehensive experiments across 3 LLMs on 4 text evaluation tasks demonstrate that BatchEval outperforms state-of-the-art methods by 10.5% on Pearson correlations with only 64% API cost on average. Further analyses have been conducted to verify the robustness, generalization, and working mechanism of BatchEval. </p></div>
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> Self-consistency (SC) has been a widely used decoding strategy for chain-of-thought reasoning. Despite bringing significant performance improvements across a variety of multi-step reasoning tasks, it is a high-cost method that requires multiple sampling with the preset size. In this paper, we propose a simple and scalable sampling process, \textbf{E}arly-Stopping \textbf{S}elf-\textbf{C}onsistency (ESC), to greatly reduce the cost of SC without sacrificing performance. On this basis, one control scheme for ESC is further derivated to dynamically choose the performance-cost balance for different tasks and models. To demonstrate ESC's effectiveness, we conducted extensive experiments on three popular categories of reasoning tasks: arithmetic, commonsense and symbolic reasoning over language models with varying scales. The empirical results show that ESC reduces the average number of sampling of chain-of-thought reasoning by a significant margin on six benchmarks, including MATH (-33.8%), GSM8K (-80.1%), StrategyQA (-76.8%), CommonsenseQA (-78.5%), Coin Flip (-84.2%) and Last Letters (-67.4%), while attaining comparable performances. </p></div>
     <p style="margin:0"><button class="accordion">
       Data&Code
     </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <a href="https://github.com/ypw0102/BatchEval">Data &amp; code for replication</a>  </p></div>
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <a href="https://github.com/Yiwei98/ESC">Data &amp; code for replication</a>  </p></div>
     <p style="margin:0"><button class="accordion">
       BibTeX citation
     </button>
     <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <pre> <code>
-@article{yuan2023batcheval,
-  title={BatchEval: Towards Human-like Text Evaluation},
-  author={Yuan, Peiwen and Feng, Shaoxiong and Li, Yiwei and Wang, Xinglin and Pan, Boyuan and Wang, Heda and Li, Kan},
-  journal={arXiv preprint arXiv:2401.00437},
+@article{li2024escape,
+  title={Escape Sky-high Cost: Early-stopping Self-Consistency for Multi-step Reasoning},
+  author={Li, Yiwei and Yuan, Peiwen and Feng, Shaoxiong and Pan, Boyuan and Wang, Xinglin and Sun, Bin and Wang, Heda and Li, Kan},
+  journal={arXiv preprint arXiv:2401.10480},
+  year={2024}
+}
+</code> </pre> </p></div><br>
+
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://arxiv.org/abs/2401.10487">Generative Dense Retrieval: Memory Can Be a Burden</a> <br> Peiwen Yuan*, Xinglin Wang*, Shaoxiong Feng, Boyuan Pan, Yiwei Li, Heda Wang, Xupeng Miao, Kan Li <br> <b> <i>EACL2024</i> main oral</b> <br><button class="accordion"> 
+    Abstract   
+    </button>   
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> Generative Retrieval (GR), autoregressively decoding relevant document identifiers given a query, has been shown to perform well under the setting of small-scale corpora. By memorizing the document corpus with model parameters, GR implicitly achieves deep interaction between query and document. However, such a memorizing mechanism faces three drawbacks: (1) Poor memory accuracy for fine-grained features of documents; (2) Memory confusion gets worse as the corpus size increases; (3) Huge memory update costs for new documents. To alleviate these problems, we propose the Generative Dense Retrieval (GDR) paradigm. Specifically, GDR first uses the limited memory volume to achieve inter-cluster matching from query to relevant document clusters. Memorizing-free matching mechanism from Dense Retrieval (DR) is then introduced to conduct fine-grained intra-cluster matching from clusters to relevant documents. The coarse-to-fine process maximizes the advantages of GR's deep interaction and DR's scalability. Besides, we design a cluster identifier constructing strategy to facilitate corpus memory and a cluster-adaptive negative sampling strategy to enhance the intra-cluster mapping ability. Empirical results show that GDR obtains an average of 3.0 R@100 improvement on NQ dataset under multiple settings and has better scalability. </p></div>
+    <p style="margin:0"><button class="accordion">
+      Data&Code
+    </button>
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <a href="https://github.com/ypw0102/GDR">Data &amp; code for replication</a>  </p></div>
+    <p style="margin:0"><button class="accordion">
+      BibTeX citation
+    </button>
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <pre> <code>
+@article{yuan2024generative,
+  title={Generative Dense Retrieval: Memory Can Be a Burden},
+  author={Yuan, Peiwen and Wang, Xinglin and Feng, Shaoxiong and Pan, Boyuan and Li, Yiwei and Wang, Heda and Miao, Xupeng and Li, Kan},
+  journal={arXiv preprint arXiv:2401.10487},
+  year={2024}
+}
+</code> </pre> </p></div><br>
+
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://arxiv.org/abs/2312.12832">Turning Dust into Gold: Distilling Complex Reasoning Capabilities from LLMs by Leveraging Negative Data</a> <br> Yiwei Li*, Peiwen Yuan*, Shaoxiong Feng, Boyuan Pan, Bin Sun, Xinglin Wang, Heda Wang, Kan Li <br> <b> <i>AAAI2024</i> oral</b> <br><button class="accordion"> 
+    Abstract   
+    </button>   
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> Large Language Models (LLMs) have performed well on various reasoning tasks, but their inaccessibility and numerous parameters hinder wide application in practice. One promising way is distilling the reasoning ability from LLMs to small models by the generated chain-of-thought reasoning paths. In some cases, however, LLMs may produce incorrect reasoning chains, especially when facing complex mathematical problems. Previous studies only transfer knowledge from positive samples and drop the synthesized data with wrong answers. In this work, we illustrate the merit of negative data and propose a model specialization framework to distill LLMs with negative samples besides positive ones. The framework consists of three progressive steps, covering from training to inference stages, to absorb knowledge from negative data. We conduct extensive experiments across arithmetic reasoning tasks to demonstrate the role of negative data in distillation from LLM. </p></div>
+    <p style="margin:0"><button class="accordion">
+      Data&Code
+    </button>
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <a href="https://github.com/Yiwei98/TDG">Data &amp; code for replication</a>  </p></div>
+    <p style="margin:0"><button class="accordion">
+      BibTeX citation
+    </button>
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <pre> <code>
+@article{li2023turning,
+  title={Turning dust into gold: Distilling complex reasoning capabilities from llms by leveraging negative data},
+  author={Li, Yiwei and Yuan, Peiwen and Feng, Shaoxiong and Pan, Boyuan and Sun, Bin and Wang, Xinglin and Wang, Heda and Li, Kan},
+  journal={arXiv preprint arXiv:2312.12832},
+  year={2023}
+}
+</code> </pre> </p></div><br>
+
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/a8b148559549ce33261e79b4400e0d77-Abstract-Conference.html">Better Correlation and Robustness: A Distribution-Balanced Self-Supervised Learning Framework for Automatic Dialogue Evaluation</a> <br> Peiwen Yuan, Xinglin Wang, Jiayi Shi, Bin Sun, Yiwei Li, Kan Li <br> <b> <i>NeurIPS2023</i> poster</b> <br><button class="accordion"> 
+    Abstract   
+    </button>   
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> Turn-level dialogue evaluation models (TDEMs), using self-supervised learning (SSL) framework, have achieved state-of-the-art performance in open-domain dialogue evaluation. However, these models inevitably face two potential problems. First, they have low correlations with humans on medium coherence samples as the SSL framework often brings training data with unbalanced coherence distribution. Second, the SSL framework leads TDEM to nonuniform score distribution. There is a danger that the nonuniform score distribution will weaken the robustness of TDEM through our theoretical analysis. To tackle these problems, we propose Better Correlation and Robustness (BCR), a distribution-balanced self-supervised learning framework for TDEM. Given a dialogue dataset, BCR offers an effective training set reconstructing method to provide coherence-balanced training signals and further facilitate balanced evaluating abilities of TDEM. To get a uniform score distribution, a novel loss function is proposed, which can adjust adaptively according to the uniformity of score distribution estimated by kernel density estimation. Comprehensive experiments on 17 benchmark datasets show that vanilla BERT-base using BCR outperforms SOTA methods significantly by 11.3% on average. BCR also demonstrates strong generalization ability as it can lead multiple SOTA methods to attain better correlation and robustness. </p></div>
+    <p style="margin:0"><button class="accordion">
+      Data&Code
+    </button>
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <a href="https://github.com/ypw0102/Better-Correlation-and-Robustness">Data &amp; code for replication</a>  </p></div>
+    <p style="margin:0"><button class="accordion">
+      BibTeX citation
+    </button>
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <pre> <code>
+@article{yuan2024better,
+  title={Better Correlation and Robustness: A Distribution-Balanced Self-Supervised Learning Framework for Automatic Dialogue Evaluation},
+  author={Yuan, Peiwen and Wang, Xinglin and Shi, Jiayi and Sun, Bin and Li, Yiwei},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
+}
+</code> </pre> </p></div><br>
+
+
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://aclanthology.org/2023.dstc-1.15/"> Parallel Corpora Alignment Framework for Multilingual and Robust Automatic Dialogue Evaluation</a> <br> Xinglin Wang*, Jiayi Shi*, Peiwen Yuan*, Kan Li <br> <b> <i>SIGDIAL x INLG 2023</i> poster</b> <br><button class="accordion"> 
+    Abstract   
+    </button>   
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> Open-domain automatic dialogue evaluation plays an important role in dialogue systems. While recent efforts are being put into making learning-based evaluation metrics correlate better with human evaluation, robust metrics for parallel corpora and multiple domains remain unexplored. Parallel corpora refer to corpora that express the same idea in different ways (e.g., translation, paraphrasing and back-translation). In this paper, we propose Parallel Corpora Alignment Framework (PCAF), which improves the consistency and robustness of model evaluation on parallel corpora. Firstly, parallel corpora are aligned in semantic space through parallel-corpora-aligned contrastive learning. Then, parallel-corpora-aligned distillation on multi-dataset is applied to further improve model’s generalization ability across multiple data domains. Our approach ranks second on the final test data of DSTC11 track4 subtask1 (“Multilingual Automatic Evaluation Metrics”, turn-level) and third on the subtask2 (“Robust Automatic Evaluation Metrics”, turn-level), which proves the strong generalization ability and robustness of our proposed approach. </p></div>
+    <p style="margin:0"><button class="accordion">
+      BibTeX citation
+    </button>
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <pre> <code>
+@inproceedings{wang2023parallel,
+  title={Parallel Corpora Alignment Framework for Multilingual and Robust Automatic Dialogue Evaluation},
+  author={Wang, Xinglin and Shi, Jiayi and Yuan, Peiwen and Li, Kan},
+  booktitle={Proceedings of The Eleventh Dialog System Technology Challenge},
+  pages={123--132},
   year={2023}
 }
 </code> </pre> </p></div><br>
