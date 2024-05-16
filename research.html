@@ -103,42 +103,17 @@
       <section>
 
     <h2><a id="recent-RRs-updated" class="anchor" href="#RRpapers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Papers Under Review</h2>
-    <p style="margin:0"> <b>Poor-Supervised Evaluation for SuperLLM via Mutual Consistency</b> <br>  Peiwen Yuan, Shaoxiong Feng, Yiwei Li, Xinglin Wang, Boyuan Pan Heda Wang, Kan Li <br> <b>Submitted to <i>ACL2024</i></b> <br><button class="accordion">
-      Abstract
-    </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> The guidance from capability evaluations has greatly propelled the progress of human society and the development of Artificial Intelligence. However, as LLMs evolve, it becomes challenging to construct evaluation benchmark with accurate labels for SuperLLMs whose capabilities approach or even surpass those of humans. To credibly conduct evaluation without accurate labels (denoted as poor-supervised evaluation), we first prove that the consistency between the model under evaluation and the reference model, when their prediction distributions are independent and the sample size is infinite, can equivalently assess the true capabilities of the model to be evaluated. However, using either humans or LLMs as the reference model cannot sufficiently meet the conditions, for which we propose the PEEM algorithm. By treating all models under evaluation as reference models, PEEM alternately optimizes model weights and filters reference models based on EM algorithm to maximally alleviate the insufficiency of the conditions. Comprehensive experiments across 3 types of tasks with 16 mainstream LLMs validate the efficiency, universality, and effectiveness of PEEM. More generally, PEEM has advanced the evaluation paradigm evolution from human-centric to human&model-centric, alleviating the limitations of human capabilities for evaluating SuperLLMs. </p></div>
-    <br>
-        
-    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://arxiv.org/abs/2401.00437v1">BatchEval: Towards Human-like Text Evaluation</a> <br> Peiwen Yuan, Shaoxiong Feng, Yiwei Li, Xinglin Wang, Boyuan Pan, Heda Wang, Kan Li <br> <b>Submitted to <i>ACL2024</i></b> <br><button class="accordion"> 
-    Abstract   
-    </button>   
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> Significant progress has been made in automatic text evaluation with the introduction of large language models (LLMs) as evaluators. However, current sample-wise evaluation paradigm suffers from the following issues: (1) Sensitive to prompt design; (2) Poor resistance to noise; (3) Inferior ensemble performance with static reference. Inspired by the fact that humans treat both criterion definition and inter sample comparison as references for evaluation, we propose BatchEval, a paradigm that conducts batch-wise evaluation iteratively to alleviate the above problems. We explore variants under this paradigm and confirm the optimal settings are two stage procedure with heterogeneous batch composition strategy and decimal scoring format. Comprehensive experiments across 3 LLMs on 4 text evaluation tasks demonstrate that BatchEval outperforms state-of-the-art methods by 10.5% on Pearson correlations with only 64% API cost on average. Further analyses have been conducted to verify the robustness, generalization, and working mechanism of BatchEval. </p></div>
-    <p style="margin:0"><button class="accordion">
-      Data&Code
-    </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <a href="https://github.com/ypw0102/BatchEval">Data &amp; code for replication</a>  </p></div>
-    <p style="margin:0"><button class="accordion">
-      BibTeX citation
-    </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <pre> <code>
-@article{yuan2023batcheval,
-  title={BatchEval: Towards Human-like Text Evaluation},
-  author={Yuan, Peiwen and Feng, Shaoxiong and Li, Yiwei and Wang, Xinglin and Pan, Boyuan and Wang, Heda and Li, Kan},
-  journal={arXiv preprint arXiv:2401.00437},
-  year={2023}
-}
-</code> </pre> </p></div><br>
-
+    
     <hr>
 
     <h2><a id="published-papers-updated" class="anchor" href="#publications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Accepted Papers</h2>
-    <p style="margin:0"> <b>Poor-Supervised Evaluation for SuperLLM via Mutual Consistency</b> <br>  Peiwen Yuan, Shaoxiong Feng, Yiwei Li, Xinglin Wang, Boyuan Pan Heda Wang, Kan Li <br> <b>Submitted to <i>ACL2024</i></b> <br><button class="accordion">
+    <p style="margin:0"> <b>Poor-Supervised Evaluation for SuperLLM via Mutual Consistency</b> <br>  Peiwen Yuan, Shaoxiong Feng, Yiwei Li, Xinglin Wang, Boyuan Pan Heda Wang, Kan Li <br> <b><i>ACL2024 findings</i></b> <br><button class="accordion">
       Abstract
     </button>
     <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> The guidance from capability evaluations has greatly propelled the progress of human society and the development of Artificial Intelligence. However, as LLMs evolve, it becomes challenging to construct evaluation benchmark with accurate labels for SuperLLMs whose capabilities approach or even surpass those of humans. To credibly conduct evaluation without accurate labels (denoted as poor-supervised evaluation), we first prove that the consistency between the model under evaluation and the reference model, when their prediction distributions are independent and the sample size is infinite, can equivalently assess the true capabilities of the model to be evaluated. However, using either humans or LLMs as the reference model cannot sufficiently meet the conditions, for which we propose the PEEM algorithm. By treating all models under evaluation as reference models, PEEM alternately optimizes model weights and filters reference models based on EM algorithm to maximally alleviate the insufficiency of the conditions. Comprehensive experiments across 3 types of tasks with 16 mainstream LLMs validate the efficiency, universality, and effectiveness of PEEM. More generally, PEEM has advanced the evaluation paradigm evolution from human-centric to human&model-centric, alleviating the limitations of human capabilities for evaluating SuperLLMs. </p></div>
     <br>
         
-    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://arxiv.org/abs/2401.00437v1">BatchEval: Towards Human-like Text Evaluation</a> <br> Peiwen Yuan, Shaoxiong Feng, Yiwei Li, Xinglin Wang, Boyuan Pan, Heda Wang, Kan Li <br> <b>Submitted to <i>ACL2024</i></b> <br><button class="accordion"> 
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://arxiv.org/abs/2401.00437v1">BatchEval: Towards Human-like Text Evaluation</a> <br> Peiwen Yuan, Shaoxiong Feng, Yiwei Li, Xinglin Wang, Boyuan Pan, Heda Wang, Kan Li <br> <b><i>ACL2024 main</i></b> <br><button class="accordion"> 
     Abstract   
     </button>   
     <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> Significant progress has been made in automatic text evaluation with the introduction of large language models (LLMs) as evaluators. However, current sample-wise evaluation paradigm suffers from the following issues: (1) Sensitive to prompt design; (2) Poor resistance to noise; (3) Inferior ensemble performance with static reference. Inspired by the fact that humans treat both criterion definition and inter sample comparison as references for evaluation, we propose BatchEval, a paradigm that conducts batch-wise evaluation iteratively to alleviate the above problems. We explore variants under this paradigm and confirm the optimal settings are two stage procedure with heterogeneous batch composition strategy and decimal scoring format. Comprehensive experiments across 3 LLMs on 4 text evaluation tasks demonstrate that BatchEval outperforms state-of-the-art methods by 10.5% on Pearson correlations with only 64% API cost on average. Further analyses have been conducted to verify the robustness, generalization, and working mechanism of BatchEval. </p></div>
