@@ -271,31 +271,14 @@
     </button>
     <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> Self-consistency (SC), leveraging multiple samples from LLMs, shows significant gains on various reasoning tasks but struggles with free-form generation due to the difficulty of aggregating answers. Its variants, UCS and USC, rely on sample selection or voting mechanisms to improve output quality. These methods, however, face limitations due to their inability to fully utilize the nuanced consensus knowledge present within multiple candidate samples, often resulting in suboptimal outputs. We propose Fine-Grained Self-Consistency (FSC) to addresses these limitations by extracting and integrating segment-level commonalities from candidate samples, enhancing the performance of LLMs both in open-ended and reasoning tasks. Based on this, we present two additional strategies: candidate filtering, which enhances overall quality by identifying highly similar candidate sets, and merging, which reduces input token requirements by combining similar samples. The effectiveness of FSC is demonstrated through extensive experiments on various tasks, including summarization, code generation, and mathematical reasoning, using GPT-3.5-turbo and GPT-4. The results indicate significant improvements over baseline methods, showcasing the potential of FSC to optimize output quality by effectively synthesizing fine-grained consensus knowledge from multiple samples. </p></div>
     <br>
-</code> </pre> </p></div><br>
+<br>
 
-
-    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://arxiv.org/abs/2408.13987">Focused Large Language Models are Stable Many-Shot Learners</a> <br>  Peiwen Yuan, Shaoxiong Feng, Yiwei Li, Xinglin Wang, Yueqi Zhang, Chuyi Tan, Boyuan Pan, Heda Wang, Yao Hu, Kan Li <br> <b><i>EMNLP2024 main</i></b> <br><button class="accordion">
-      Abstract
-    </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> In-Context Learning (ICL) enables large language models (LLMs) to achieve rapid task adaptation by learning from demonstrations. With the increase in available context length of LLMs, recent experiments have shown that the performance of ICL does not necessarily scale well in many-shot (demonstration) settings. We theoretically and experimentally confirm that the reason lies in more demonstrations dispersing the model attention from the query, hindering its understanding of key content. Inspired by how humans learn from examples, we propose a training-free method FocusICL, which conducts triviality filtering to avoid attention being diverted by unimportant contents at token-level and operates hierarchical attention to further ensure sufficient attention towards current query at demonstration-level. We also design an efficient hyperparameter searching strategy for FocusICL based on model perplexity of demonstrations. Comprehensive experiments validate that FocusICL achieves an average performance improvement of 5.2% over vanilla ICL and scales well with many-shot demonstrations. </p></div>
-    <p style="margin:0"><button class="accordion">
-      BibTeX citation
-    </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <pre> <code>
-@article{yuan2024focused,
-  title={Focused Large Language Models are Stable Many-Shot Learners},
-  author={Yuan, Peiwen and Feng, Shaoxiong and Li, Yiwei and Wang, Xinglin and Zhang, Yueqi and Tan, Chuyi and Pan, Boyuan and Wang, Heda and Hu, Yao and Li, Kan},
-  journal={arXiv preprint arXiv:2408.13987},
-  year={2024}
-}
-</code> </pre> </p></div><br>
-    
     <p style="margin:0"> <b>Instruction Embedding: Latent Representations of Instructions Towards Task Identification</b> <br>  Yiwei Li*, Jiayi Shi*, Shaoxiong Feng, Peiwen Yuan, Xinglin Wang, Boyuan Pan, Heda Wang, Yao Hu, Kan Li <br> <b><i>NeurIPS(DB track) 2024 main</i></b> <br><button class="accordion">
       Abstract
     </button>
     <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> Instruction data is crucial for improving the capability of Large Language Models (LLMs) to align with human-level performance. Recent research LIMA demonstrates that alignment is essentially a process where the model adapts instructions' interaction style or format to solve various tasks, leveraging pre-trained knowledge and skills. Therefore, for instructional data, the most important aspect is the task it represents, rather than the specific semantics and knowledge information. The latent representations of instructions play roles for some instruction-related tasks like data selection and demonstrations retrieval. However, they are always derived from text embeddings, encompass overall semantic information that influences the representation of task categories. In this work, we introduce a new concept, instruction embedding, and construct Instruction Embedding Benchmark (IEB) for its training and evaluation. Then, we propose a baseline Prompt-based Instruction Embedding (PIE) method to make the representations more attention on tasks. The evaluation of PIE, alongside other embedding methods on IEB with two designed tasks, demonstrates its superior performance in accurately identifying task categories. Moreover, the application of instruction embeddings in four downstream tasks showcases its effectiveness and suitability for instruction-related tasks. </p></div>
     <br>
-</code> </pre> </p></div><br>
+<br>
         
       </section>
     </div>
