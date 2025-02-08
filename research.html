@@ -103,7 +103,37 @@
       <section>
 
     <h2><a id="recent-RRs-updated" class="anchor" href="#RRpapers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Papers Under Review</h2>
-    
+
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://www.arxiv.org/abs/2502.01683">LLM-Powered Benchmark Factory: Reliable, Generic, and Efficient</a> <br>  Peiwen Yuan, Shaoxiong Feng, Yiwei Li, Xinglin Wang, Yueqi Zhang, Jiayi Shi, Chuyi Tan, Boyuan Pan, Yao Hu, Kan Li <br> <b><i>submit to ICML2025</i></b> <br><button class="accordion">
+      Abstract
+    </button>
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> The rapid advancement of large language models (LLMs) has led to a surge in both model supply and application demands. To facilitate effective matching between them, reliable, generic and efficient benchmark generators are widely needed. However, human annotators are constrained by inefficiency, and current LLM benchmark generators not only lack generalizability but also struggle with limited reliability, as they lack a comprehensive evaluation framework for validation and optimization. To fill this gap, we first propose an automated and unbiased evaluation framework, structured around four dimensions and ten criteria. Under this framework, we carefully analyze the advantages and weaknesses of directly prompting LLMs as generic benchmark generators. To enhance the reliability, we introduce a series of methods to address the identified weaknesses and integrate them as BenchMaker. Experiments across multiple LLMs and tasks confirm that BenchMaker achieves superior or comparable performance to human-annotated benchmarks on all metrics, highlighting its generalizability and reliability. More importantly, it delivers highly consistent evaluation results across 12 LLMs (0.967 Pearson correlation against MMLU-Pro), while taking only $0.005 and 0.38 minutes per sample. </p></div>
+    <p style="margin:0"><button class="accordion">
+      BibTeX citation
+    </button>
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <pre> <code>
+@article{yuan2025llm,
+  title={LLM-Powered Benchmark Factory: Reliable, Generic, and Efficient},
+  author={Yuan, Peiwen and Feng, Shaoxiong and Li, Yiwei and Wang, Xinglin and Zhang, Yueqi and Shi, Jiayi and Tan, Chuyi and Pan, Boyuan and Hu, Yao and Li, Kan},
+  journal={arXiv preprint arXiv:2502.01683},
+  year={2025}
+}
+</code> </pre> </p></div><br>
+        
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://openreview.net/pdf/d9e7c8315f88166cc2433af95fa107f248b37e0a.pdf">Beyond One-Size-Fits-All: Tailored Benchmarks for Efficient Evaluation</a> <br>  Peiwen Yuan*, Yueqi Zhang*, Shaoxiong Feng, Yiwei Li, Xinglin Wang, Jiayi Shi, Chuyi Tan, Boyuan Pan, Yao Hu, Kan Li <br> <b><i>submit to ACL2025</i></b> <br><button class="accordion">
+      Abstract
+    </button>
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> Evaluating models on large benchmarks can be very resource-intensive, especially during a period of rapid model evolution. Existing efficient evaluation methods estimate the performance of target models by testing them on a small, static coreset derived from the publicly available evaluation results of source models, which are separate from the target models. However, these approaches rely on the assumption that target models have high prediction consistency with source models, which doesn’t generalize well in practice. To fill this gap, we propose TailoredBench, a method that conducts customized evaluation tailored to each target model. Specifically, a Global-coreset is first constructed as a probe to identify the most consistent source models for each target model with an adaptive source model selection strategy. Afterwards, a scalable K-Medoids clustering algorithm is proposed to extend the Global-coreset to a tailored Native-coreset for each target model. According to the predictions on respective Native-coreset, we estimate the overall performance of target models with a calibrated estimation strategy. Comprehensive experiments on five benchmarks across over 300 models demonstrate that compared to best performing baselines, TailoredBench achieves an average reduction of 31.4% in MAE of accuracy estimates under the same inference budgets, showcasing strong effectiveness and generalizability. </p></div>
+    <p style="margin:0"><button class="accordion">
+      BibTeX citation
+    </button>
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <pre> <code>
+@article{yuanbeyond,
+  title={Beyond One-Size-Fits-All: Tailored Benchmarks for Efficient Model Evaluation},
+  author={Yuan, Peiwen and Zhang, Yueqi and Feng, Shaoxiong and Li, Yiwei and Wang, Xinglin and Shi, Jiayi and Tan, Chuyi and Pan, Boyuan and Hu, Yao and Li, Kan}
+}
+</code> </pre> </p></div><br>
+      
     <hr>
 
     <h2><a id="published-papers-updated" class="anchor" href="#publications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Accepted Papers (first/co-first author)</h2>
